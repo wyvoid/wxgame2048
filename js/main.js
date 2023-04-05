@@ -109,16 +109,15 @@ export default class Main {
       if (isGameTerminated) {
         wx.showModal({
           title: '温馨提示',
-          content: 'game over!',
+          content: '游戏结束啦，再来一局吧！',
           showCancel: true,
-          cancelText: '下次再战',
+          cancelText: '下次再来',
           confirmText: '再来一局',
           success: function (res) {
             if (res.confirm) {
-              console.log('用户点击确定');
               this.restart();
             } else if (res.cancel) {
-              console.log('用户点击取消');
+
             }
           }.bind(this),
           fail: function (res) { console.log('用户点击fail'); },

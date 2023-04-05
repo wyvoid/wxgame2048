@@ -26,7 +26,8 @@ export default class Logo{
     var image = wx.createImage();
     image.src = 'images/title.png';
     image.onload = function () {
-      ctx.drawImage(image, 10, 20, 201, 39.75);
+
+      ctx.drawImage(image, 10, 10, 50, 50);
     }
 
     // 绘制描述
@@ -34,8 +35,8 @@ export default class Logo{
     ctx.fillStyle = "#776e65";
     ctx.textAlign = "left";
     ctx.textBaseline = "middle"//得写在font之前
-    ctx.font = "8px Arial bold";
-    ctx.fillText("大学毕业小屌丝通过努力到达人生巅峰的励(苦)志(逼)过程。", 10, 100);
+    ctx.font = "20px Arial bold";
+    ctx.fillText("开心2048", 70, 40);
     ctx.closePath();
   }
 

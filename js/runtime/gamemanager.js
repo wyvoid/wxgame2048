@@ -5,12 +5,12 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 // 游戏网格绘制起始坐标
-const START_X = screenWidth * 0.2 / 2
-const START_Y = screenHeight * 0.2
+const START_X = screenWidth * 0.1 / 2
+const START_Y = screenHeight * 0.3
 
 // 游戏网格背景样式及宽高
 const GRID_CONTAINER_STYLE = '#a7b6c5'
-const GRID_CONTAINER_WIDTH = screenWidth * 0.8
+const GRID_CONTAINER_WIDTH = screenWidth * 0.9
 const GRID_CONTAINER_RADIUS = GRID_CONTAINER_WIDTH * 1 / 75
 
 // 游戏网格样式及宽高
@@ -99,7 +99,7 @@ export default class GameManager extends Sprite{
   }
 
   num_color(n) {
-    var color = "rgba(238, 228, 218, 0.35)";
+    var color = "rgba(238, 228, 218, 1)";
     switch (n) {
       case 0:
         color = "#c0c7cd";

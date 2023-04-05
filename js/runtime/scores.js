@@ -4,20 +4,20 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 // 历史记录
-const BEST_SCORE_WIDTH = 60
-const BEST_SCORE_HEIGHT = 30
+const BEST_SCORE_WIDTH = 100
+const BEST_SCORE_HEIGHT = 60
 const BEST_SCORE_START_X = screenWidth - 20 - BEST_SCORE_WIDTH
-const BEST_SCORE_START_Y = 50
+const BEST_SCORE_START_Y = 80
 const BEST_SCORE_RADIUS = screenWidth * 0.8 * 1 / 75
-const BEST_SCORE_STYLE = "#b3c0cd"
+const BEST_SCORE_STYLE = "#d9be9d"
 
 // 当前得分
-const SCORE_WIDTH = 60
-const SCORE_HEIGHT = 30
+const SCORE_WIDTH = 100
+const SCORE_HEIGHT = 60
 const SCORE_START_X = BEST_SCORE_START_X - SCORE_WIDTH - 10
-const SCORE_START_Y = 50
+const SCORE_START_Y = 80
 const SCORE_RADIUS = screenWidth * 0.8 * 1 / 75
-const SCORE_STYLE = "#b3c0cd"
+const SCORE_STYLE = "#d9be9d"
 
 /**
  * 游戏背景类
@@ -46,7 +46,7 @@ export default class Scores extends Sprite {
     this.ctx.fillStyle = "#ffffff";
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle"//得写在font之前
-    this.ctx.font = "10px Arial bold";
+    this.ctx.font = "24px Arial bold";
     this.ctx.fillText(this.score, SCORE_START_X + SCORE_WIDTH / 2, SCORE_START_Y + SCORE_HEIGHT * 3 / 4);
     this.ctx.closePath();
   }
@@ -56,7 +56,7 @@ export default class Scores extends Sprite {
     this.ctx.fillStyle = "#ffffff";
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle"//得写在font之前
-    this.ctx.font = "10px Arial bold";
+    this.ctx.font = "24px Arial bold";
     this.ctx.fillText(this.best, BEST_SCORE_START_X + BEST_SCORE_WIDTH / 2, BEST_SCORE_START_Y + BEST_SCORE_HEIGHT * 3 / 4);
     this.ctx.closePath();
   }
@@ -71,20 +71,20 @@ export default class Scores extends Sprite {
     // 绘制当前得分
     this.fillRoundRect(this.ctx, SCORE_START_X, SCORE_START_Y, SCORE_WIDTH, SCORE_HEIGHT, SCORE_RADIUS, SCORE_STYLE);
     // this.ctx.fillRect(240, 50, 40, 30);
-    this.ctx.fillStyle = "#eee4da";
+    this.ctx.fillStyle = "#fff";
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle"//得写在font之前
-    this.ctx.font = "8px Arial bold";
+    this.ctx.font = "14px Arial bold";
     this.ctx.fillText("当前得分", SCORE_START_X + SCORE_WIDTH / 2, SCORE_START_Y + SCORE_HEIGHT * 1 / 4);
     this.updateScore();
 
     // 绘制历史记录
     this.fillRoundRect(this.ctx, BEST_SCORE_START_X, BEST_SCORE_START_Y, BEST_SCORE_WIDTH, BEST_SCORE_HEIGHT, BEST_SCORE_RADIUS, BEST_SCORE_STYLE);
     // this.ctx.fillRect(285, 50, 60, 30);
-    this.ctx.fillStyle = "#eee4da";
+    this.ctx.fillStyle = "#fff";
     this.ctx.textAlign = "center";
     this.ctx.textBaseline = "middle"//得写在font之前
-    this.ctx.font = "8px Arial bold";
+    this.ctx.font = "14px Arial bold";
     this.ctx.fillText("历史记录", BEST_SCORE_START_X + BEST_SCORE_WIDTH / 2, BEST_SCORE_START_Y + BEST_SCORE_HEIGHT * 1 / 4);
     this.updateBest();
   }

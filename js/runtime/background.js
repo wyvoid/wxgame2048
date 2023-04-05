@@ -4,12 +4,12 @@ const screenWidth = window.innerWidth
 const screenHeight = window.innerHeight
 
 // 游戏网格绘制起始坐标
-const START_X = screenWidth * 0.2 / 2
-const START_Y = screenHeight * 0.2
+const START_X = screenWidth * 0.1 / 2
+const START_Y = screenHeight * 0.3
 
 // 游戏网格背景样式及宽高
 const GRID_CONTAINER_STYLE = '#a7b6c5'
-const GRID_CONTAINER_WIDTH = screenWidth * 0.8
+const GRID_CONTAINER_WIDTH = screenWidth * 0.9
 const GRID_CONTAINER_RADIUS = GRID_CONTAINER_WIDTH * 1 / 75
 
 // 游戏网格样式及宽高
@@ -41,7 +41,7 @@ export default class BackGround extends Sprite {
   render(ctx) {
     // 整个画布背景
     ctx.save();
-    ctx.fillStyle = "#e2eaef";
+    ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, screenWidth, screenHeight);
     ctx.restore();
 

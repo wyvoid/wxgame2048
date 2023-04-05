@@ -5,29 +5,24 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "game",
-	"libVersion": "game",
-	"appid": "touristappid",
+	"libVersion": "2.30.4",
+	"appid": "wx11d242df8fea01b3",
 	"projectname": "game2048",
-	"isGameTourist": true,
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": []
-		}
+	"condition": {},
+	"packOptions": {
+		"ignore": [],
+		"include": []
+	},
+	"editorSetting": {
+		"tabIndent": "tab",
+		"tabSize": 4
 	}
 }

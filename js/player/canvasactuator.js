@@ -178,31 +178,31 @@ export default class CanvasActuator {
    */
   message(won, score) {
     var type = won ? "game-won" : "game-over";
-    var message = won ? "你赢了！54大学生提示您：包养小三需谨慎，一招回到解放前。" : my_mark[score] || "Game over!";
+    var message = won ? "你赢了！开心2048提示您：包养小三需谨慎，一招回到解放前。" : my_mark[score] || "Game over!";
     switch (score) {
       case 32:
-        sharemessage = wx_relay_desc = "今天还要写100000行代码……我是小程序员，写累了我来到54大学生玩了一把游戏!";
+        sharemessage = wx_relay_desc = "今天还要写100000行代码……我是小程序员，写累了我来到开心2048玩了一把游戏!";
         break;
       case 64:
-        sharemessage = wx_relay_desc = "老板您的咖啡，摩卡不加奶油，趁热。我是小经理，我在54大学生玩着游戏喝着咖啡，是不是有些小惬意，嘎嘎。。。";
+        sharemessage = wx_relay_desc = "老板您的咖啡，摩卡不加奶油，趁热。我是小经理，我在开心2048玩着游戏喝着咖啡，是不是有些小惬意，嘎嘎。。。";
         break;
       case 128:
-        sharemessage = wx_relay_desc = "最近肾有点跟不上了……我是总经理，工作真的很累，工作之余我来到54大学生玩了一把小游戏";
+        sharemessage = wx_relay_desc = "最近肾有点跟不上了……我是总经理，工作真的很累，工作之余我来到开心2048玩了一把小游戏";
         break;
       case 256:
-        sharemessage = wx_relay_desc = "人生理想总算完成一个啦！我是CEO，我高兴的来到54大学生玩了一把小游戏，呵呵!";
+        sharemessage = wx_relay_desc = "人生理想总算完成一个啦！我是CEO，我高兴的来到开心2048玩了一把小游戏，呵呵!";
         break;
       case 512:
-        sharemessage = wx_relay_desc = "谁把我的蓝色小药丸藏起来了？我在54大学生的游戏频道迎风逆袭，爽";
+        sharemessage = wx_relay_desc = "我在开心2048的游戏频道迎风逆袭，爽";
         break;
       case 1024:
-        sharemessage = wx_relay_desc = "江山美人我都要……我在54大学生的游戏频道迎风逆袭，爽";
+        sharemessage = wx_relay_desc = "江山美人我都要……我在开心2048的游戏频道迎风逆袭，爽";
         break;
       case 2048:
-        sharemessage = wx_relay_desc = "喂，苍老师在么？我们一起在54大学生游戏频道打一局小游戏，爽一把吧!";
+        sharemessage = wx_relay_desc = "无敌是多么，多么寂寞!";
         break;
       case 4096:
-        sharemessage = wx_relay_desc = "我刚刚被举报，因为我包小三。各位54大学生的小伙伴们千万别学我啊啊啊!!!";
+        sharemessage = wx_relay_desc = "睿智的你已经超过99.9999%的好友，神一般的存在!!!";
         break
     }
     this.messageContainer.classList.add(type);
